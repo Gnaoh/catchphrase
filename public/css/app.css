@@ -4,6 +4,8 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+}
+
 body {
     overflow-x: hidden;
 }
@@ -22,7 +24,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #18bc9c;
+    color: blue;
 }
 
 h1,
@@ -62,8 +64,8 @@ hr.star-light {
 }
 
 hr.star-light:after {
-    color: #fff;
-    background-color: #18bc9c;
+    color: black;
+    background-color: white;
 }
 
 hr.star-primary {
@@ -82,7 +84,7 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #18bc9c;
+    background: #9d0504;
 }
 
 header .container {
@@ -168,6 +170,7 @@ header .intro-text .skills {
 .navbar-default,
 .navbar-inverse {
     border: 0;
+    background-color: black;
 }
 
 section {
@@ -181,7 +184,7 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #18bc9c;
+    background: black;
 }
 
 section.success a,
@@ -274,7 +277,7 @@ section.success a.active {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #18bc9c;
+    color: red;
     background: #fff;
 }
 
@@ -327,7 +330,7 @@ section.success a.active {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #18bc9c;
+    color: red;
 }
 
 form .row:first-child .floating-label-form-group {

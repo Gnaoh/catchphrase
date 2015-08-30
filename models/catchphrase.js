@@ -1,6 +1,7 @@
 var mongoose = require("mongoose");
 
 var Schema = mongoose.Schema;
+
 var CatchPhraseSchema = new Schema({
   word: String,
   definition: String
