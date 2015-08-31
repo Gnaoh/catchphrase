@@ -79,3 +79,13 @@ You *must* have routes for **Reading, Creating, and Deleting** before continuing
     * The phrases can be shuffled.
     * A user can grade themselves, giving a phrase a "thumbs up" or "down" depending on their answer.
         * A user can see their score, or a list of words they need to review.
+
+
+GAME INSTRUCTIONS        
+-FLIP A CARD, GUESS THE DEFINITION OF THE WORD
+-GET IT RIGHT, NEXT PLAYER
+-GET IT WRONG, FLIP ANOTHER CARD
+-IF YOU FLIP THE RED BAZINGA CARD, YOU LOSE.
+
+-SHUFFLE TO PLAY AGAIN
+-
