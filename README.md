@@ -1,3 +1,13 @@
+
+##GAME INSTRUCTIONS
+
+* Flip a card, answer the question
+* Get it right, next player
+* Get it wrong, flip anothr card
+* If you flip the BAZINGA card, you lose.
+* Shuffle to play again
+
+
 ##Weekend Homework
 **Want to review?** Try adding MongoDB to this [Todo App Lab](https://github.com/sf-wdi-21/mongo_todo_refactor). And check out the [solution](https://github.com/sf-wdi-21/mongo_todo_refactor/tree/solution)!
 
@@ -80,12 +90,3 @@ You *must* have routes for **Reading, Creating, and Deleting** before continuing
     * A user can grade themselves, giving a phrase a "thumbs up" or "down" depending on their answer.
         * A user can see their score, or a list of words they need to review.
 
-
-GAME INSTRUCTIONS        
--FLIP A CARD, GUESS THE DEFINITION OF THE WORD
--GET IT RIGHT, NEXT PLAYER
--GET IT WRONG, FLIP ANOTHER CARD
--IF YOU FLIP THE RED BAZINGA CARD, YOU LOSE.
-
--SHUFFLE TO PLAY AGAIN
--
