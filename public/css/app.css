@@ -466,6 +466,7 @@ footer .footer-below {
     display: inline-block;
     border: 3px solid #9d0504;
     color: yellow;
+    font-size: 16px;
     margin: 5px;
 }
 
@@ -489,7 +490,55 @@ footer .footer-below {
 .btn-default:hover, 
 .btn-default:focus, 
 .btn-default:active {
-    color: yellow;
+    color: #ddb604;
     border-color: #9d0504;
     background-color: black;
-    }    
+
+/* CARDS */
+
+body {
+  padding: 20px;
+}
+
+.baraja-demo {
+  color: #fff;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+.baraja-container {
+  width: 220px;
+  height: 320px;
+  margin: 0 auto 30px;
+  position: relative;
+  padding: 0;
+  list-style-type: none;
+}
+
+.baraja-container li {
+  background: #000;
+  border: 8px solid #ccc;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0 10px;      
+  pointer-events: auto;
+  position: absolute;
+  text-align: left;
+  top: 0;
+  width: 100%;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+

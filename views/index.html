@@ -84,8 +84,9 @@
             <center>
                 <form class="form-inline" id="new-word-form">
                     <input name="word" type="text" class="form-control" id="phrase-word-input" placeholder="Word">
-                    <input name="definition" type="text" class="form-control" id="phrase-definition-input" placeholder="Definition">
+                    <input name="definition" type="text" class="form-control" id="phrase-definition-input" placeholder="Definition" maxlength="60">
                     <button type="submit" class="btn btn-default">ADD</button>
+                    <button type="button" class="btn btn-default" id="update-word" onclick="updateWord()" class="btn btn-default">UPDATE</button>
                 </form><br>
                 <ul class="list-group" id="phrase-ul"></ul>
             </div>
@@ -94,7 +95,7 @@
                         <span class="label label-default"><%= definition %></span>
                         <button data-_id="<%= _id %>" onclick="deleteWord(this)" type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     </li>
-                </script>
+                </script><br>
             </center>
         </div>
     </section>
@@ -110,12 +111,11 @@
             </div>
                 <center>
                     <div>
-                        <p>I would be happy to hear from you.<br><br>
-                        Please message me at <a href="phonghoang [at] gmail.com" rel="nofollow" onclick="this.href='mailto:' + 'phonghoang' + '@' + 'gmail.com'" class="link">phonghoang@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/pub/peter-hoang/27/240/bb" target="_blank" class="link">LinkedIn</a>.</p><br>
+                        <p>Thanks for visiting, I'd love to hear what you think!    <br><br>
+                        Feel free to message me <a href="mailto:someone@example.com?Subject=Hello" target="_top">here</a> or connect with me on <a href="https://www.linkedin.com/pub/peter-hoang/27/240/bb" target="_blank" class="link">LinkedIn</a>.</p><br>
 
-                        <p>If you happen to be in San Francisco, I'd love to grab a coffee and chat.<p><br><br>
-                          <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Capital%20One%20360%20Caf%C3%A9%2C%20Post%20Street%2C%20San%20Francisco%2C%20CA%2C%20United%20States&key=AIzaSyCZNuoQaTW7CMIHZ1IGyiagfW-evTMUN2w"></iframe>
-                        <p><br>Feel free to call me at <a href="tel:4242306044">(424)-230-6044</a> if you're around the area!</p>
+                        <p>And if you happen to be in San Francisco, let's grab some coffee and chat.<p><br>
+                          <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Capital%20One%20360%20Caf%C3%A9%2C%20Post%20Street%2C%20San%20Francisco%2C%20CA%2C%20United%20States&key=AIzaSyCZNuoQaTW7CMIHZ1IGyiagfW-evTMUN2w"></iframe><br><br>
 
                           <a href="https://github.com/Gnaoh" target="blank">
                             <img src="/static/images/github.png" alt="Home">
