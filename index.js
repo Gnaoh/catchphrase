@@ -56,16 +56,6 @@ app.delete("/phrases/:id", function (req, res){
   });
 });
 
-app.put('/phrases', function(req, res){
-  db.Bazinga.update({word: req.body.word}, req.body, function(err, word){
-    if(err){
-      console.log(err);
-    }
-    res.send(word);
-  });
-});
-
-
 app.listen(3000, function () {
   console.log("Systems Online!");
 });
