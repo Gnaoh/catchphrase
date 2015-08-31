@@ -1,11 +1,11 @@
 // REQUIREMENTS //
-var db = require("./models");
-var express = require("express"),
-  bodyParser = require("body-parser"),
-  path = require("path");
-  views = path.join(process.cwd(), "views");
-  app = express();
-
+var db          = require("./models");
+var express     = require("express"),
+    app         = express();
+    bodyParser  = require("body-parser"),
+    path        = require("path");
+    views       = path.join(process.cwd(), "views");
+  
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use("/static", express.static("public"));
@@ -13,9 +13,8 @@ app.use("/vendor", express.static("bower_components"));
 
 // ROUTES //
 app.get("/", function (req, res) {
-  var homePath = path.join(views, "index.html");
-  res.sendFile(homePath);
-});
+  res.sendFile(path.join(views, "index.html"));
+  });
 
 app.get("/phrases", function(req, res){
   db.Bazinga.find({}, function(err, words){

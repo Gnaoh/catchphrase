@@ -11,7 +11,7 @@ function pageLoad() {
     e.preventDefault();
     $.post("/phrases", $(this).serialize())
       .done(function(res){
-        getFoods();
+        getWords();
         $("#new-word-form")[0].reset();
       });
   });

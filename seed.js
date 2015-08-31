@@ -18,3 +18,5 @@ db.Bazinga.create(phrase_list, function (err, subword) {
   if (err) { return console.log(err); };
             console.log(subword);
   });
+
+process.exit();

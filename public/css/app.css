@@ -460,3 +460,36 @@ footer .footer-below {
     display: none;
     opacity: 0;
 }
+
+.list-group-item {
+    background-color: black;
+    display: inline-block;
+    border: 3px solid #9d0504;
+    color: yellow;
+    margin: 5px;
+}
+
+.label-default {
+    background-color: black;
+}
+
+.form-control {
+    background-color: black;
+    color: white;
+}
+
+.form-control:focus {
+    border-color: #9d0504;
+}
+
+.btn-default {
+    border-color: white;
+    background-color: black;
+}
+.btn-default:hover, 
+.btn-default:focus, 
+.btn-default:active {
+    color: yellow;
+    border-color: #9d0504;
+    background-color: black;
+    }    
