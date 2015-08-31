@@ -44,6 +44,24 @@ function deleteWord(context) {
   });
 }
 
+function updateWord(){
+    $('#update-word').click(function(e){
+        e.preventDefault();
+    });
+    var updatePhrase = $('#phrase-word-input').val();
+    var updateDef = $('#phrase-definition-input').val();
+    var updatedWord = {word: updatePhrase, definition: updateDef};
+
+    $.ajax({
+        url: "/phrases/",
+        type: "PUT",
+        data: updatedWord,
+        success: function(){
+            window.location.reload();
+        }
+    })
+}
+
 /*========================================
               BOOTSTRAP JS
 ========================================*/
