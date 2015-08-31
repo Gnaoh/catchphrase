@@ -1,9 +1,9 @@
-//JAVSCRIPT FOR CRUD//
+/*========================================
+              CRUD FUNCTIONS
+========================================*/
 $(function() {
     pageLoad();
 });
-
-//Functions//
 
 function pageLoad() {
   getWords();
@@ -62,7 +62,9 @@ function updateWord(){
     })
 }
 
-// JAVASCRIPT CARD //
+/*========================================
+              BOOTSTRAP JS
+========================================*/
 $(function() {
     $('body').on('click', '.page-scroll a', function(event) {
         var $anchor = $(this);
@@ -70,17 +72,6 @@ $(function() {
             scrollTop: $($anchor.attr('href')).offset().top
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
-    });
-});
-
-// Floating label headings for the contact form
-$(function() {
-    $("body").on("input propertychange", ".floating-label-form-group", function(e) {
-        $(this).toggleClass("floating-label-form-group-with-value", !! $(e.target).val());
-    }).on("focus", ".floating-label-form-group", function() {
-        $(this).addClass("floating-label-form-group-with-focus");
-    }).on("blur", ".floating-label-form-group", function() {
-        $(this).removeClass("floating-label-form-group-with-focus");
     });
 });
 
@@ -94,65 +85,35 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
-//CARDS//
-if ($("#baraja-el").length ) {
-  $(function() {
+/*========================================
+              CARDS JS
+========================================*/
+(function() {
+  var cards = document.querySelectorAll(".card.effect__click");
+  for ( var i  = 0, len = cards.length; i < len; i++ ) {
+    var card = cards[i];
+    clickListener( card );
+  }
 
-    var $el = $('#baraja-el'),
-      baraja = $el.baraja();
-
-    // navigation
-    $('#baraja-prev').on('click', function(event) {
-      baraja.previous();
-      $('.baraja-container li').each( function(){
-        if ($(this).css('z-index') === "1000") {
-          $(this).addClass('visited');
-        }
-      });
+  function clickListener(card) {
+    card.addEventListener( "click", function() {
+      var c = this.classList;
+      c.contains("flipped") === true ? c.remove("flipped") : c.add("flipped");
     });
+  }
+})();
 
-    $('#baraja-next').on('click', function(event) {
-      baraja.next();
-      $('.baraja-container li').each( function(){
-        if ($(this).css('z-index') === "1010") {
-          $(this).addClass('visited');
-        }
-      });
-    });
-
-    $('.baraja-container').hover(function(event) {
-
-      $(this).toggleClass('open');
-      if($(this).hasClass('open')){
-        baraja.fan( {
-          speed: 400,
-          easing: 'ease-out',
-          range: 80,
-          direction: 'right',
-          origin: {x:0, y:0},
-          center: true
-        });
-      }
-      else {
-        baraja.close();
-      }
-    });
-
-    $('.baraja-container li').click(function() {
-      $(this).addClass('visited');
-    });
-  });
-}
-
-$(document).ready(function(event) {
-    baraja.fan( {
-    speed: 400,
-    easing: 'ease-out',
-    range: 80,
-    direction: 'right',
-    origin: {x:0, y:0},
-    center: true
-  });
+/*========================================
+              SHUFFLE JS
+========================================*/
+$(function () {
+    var parent = $("#shuffle");
+    var divs = parent.children();
+    while (divs.length) {
+        parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+    }
 });
 
-
+ $("#reset").click(function(){
+    location.reload();
+})

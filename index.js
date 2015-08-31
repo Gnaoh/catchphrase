@@ -1,4 +1,6 @@
-// REQUIREMENTS //
+/*========================================
+              REQUIREMENtS
+========================================*/
 var db          = require("./models");
 var express     = require("express"),
     app         = express();
@@ -11,7 +13,9 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use("/static", express.static("public"));
 app.use("/vendor", express.static("bower_components"));
 
-// ROUTES //
+/*========================================
+              ROUTES
+========================================*/
 app.get("/", function (req, res) {
   res.sendFile(path.join(views, "index.html"));
   });
